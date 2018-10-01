@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://petsgre.github.io/myAjax.js" charset="utf-8"></script>
+
+123
+<script>
+  myAjax({
+    type:'post',
+    url:'./hello',
+    data:"传的数据",
+    callback:function (succeeded,data) {
+      if(succeeded){
+        console.log(data);
+      }else {
+        console.log('失败');
+      }
+    }
+  })
+</script>
+</body>
+</html>
